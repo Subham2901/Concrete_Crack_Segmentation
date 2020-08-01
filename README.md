@@ -6,7 +6,7 @@ for evaluation of our model we have used Dice Loss as our objetive function and 
 
 
 ## Table of contents
-* [Contributers](#Contributers)
+* [Contributors](#Contributors)
 * [Introduction](#Introduction)
 * [Dataset & Preprocessing](#Dataset-And-Preprocessing)
 * [Model Architecture](#Network-Architecture)
@@ -15,11 +15,11 @@ for evaluation of our model we have used Dice Loss as our objetive function and 
 * [Result](#Result)
 * [Citations](#Citations)
 
-### Contributers:
+### Contributors:
 This project is created by the joint efforts of
-* https://github.com/Subham2901
-* https://github.com/Sandeep2017
-* https://github.com/Neel1097
+* [Subham Singh](https://github.com/Subham2901)
+* [Sandeep Ghosh](https://github.com/Sandeep2017)
+* [amit Maity](https://github.com/Neel1097)
 
 ### Introduction:
 A crack is a linear fracture in concrete which extends partly or completely through the member. A crack occurs, when the tensile stresses of a concrete exceeds the tensile capacity due to various natural and man-made reasons. The utility of concrete can be seen in almost everywhere, from buildings, bridges, to other structures. Thus, when a crack occurs in a concrete slab, it can be an indication of some major structural problems in the whole architecture, which possess a potential risk of some serious accident. There lie some existing ways to detect cracks, starting from visual inspection and monitoring to other non-destructive techniques (NDT) which uses various image processing techniques to segment cracks, but due to unavoidable noise in images, the segmentation of the cracks from its background, isn’t that precise. In this paper, we have tried to design a simple deep learning algorithm, which holds the potential to detect cracks of any thickness. As a result, it bypasses the need of manual feature extraction, by learning the essential features necessary for segmenting the crack from its background by classifying each pixel as a crack or not.    

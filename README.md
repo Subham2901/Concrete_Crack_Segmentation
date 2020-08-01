@@ -4,6 +4,7 @@ Classical image processing methods demands heavy feature engineering,as well as 
 Hence,We tried to make a  modified U-net based architecture , and replaced all the convolutional layers with residual blocks(inspired from ResNet architecture) in both encoder and decoder region
 for evaluation of our model we have used Dice Loss as our objetive function and F1 score as a metric.Other than that,for better convergence and optimisation, a learning rate schedular and AMSGRAD optimiser was utilised
 
+
 ## Table of contents
 * [Introduction](#Introduction)
 * [Dataset & Preprocessing](#Dataset-And-Preprocessing)
@@ -14,7 +15,8 @@ for evaluation of our model we have used Dice Loss as our objetive function and 
 
 
 ### Introduction:
-A crack is a linear fracture in concrete which extends partly or completely through the member. A crack occurs, when the tensile stresses of a concrete exceeds the tensile capacity due to various natural and man-made reasons. The utility of concrete can be seen in almost everywhere, from buildings, bridges, to other structures. Thus, when a crack occurs in a concrete slab, it can be an indication of some major structural problems in the whole architecture, which possess a potential risk of some serious accident. There lie some existing ways to detect cracks, starting from visual inspection and monitoring to other non-destructive techniques (NDT) which uses various image processing techniques to segment cracks, but due to unavoidable noise in images, the segmentation of the cracks from its background, isn’t that precise. In this paper, we have tried to design a simple deep learning algorithm, which holds the potential to detect cracks of any thickness. As a result, it bypasses the need of manual feature extraction, by learning the essential features necessary for segmenting the crack from its background by classifying each pixel as a crack or not. 
+A crack is a linear fracture in concrete which extends partly or completely through the member. A crack occurs, when the tensile stresses of a concrete exceeds the tensile capacity due to various natural and man-made reasons. The utility of concrete can be seen in almost everywhere, from buildings, bridges, to other structures. Thus, when a crack occurs in a concrete slab, it can be an indication of some major structural problems in the whole architecture, which possess a potential risk of some serious accident. There lie some existing ways to detect cracks, starting from visual inspection and monitoring to other non-destructive techniques (NDT) which uses various image processing techniques to segment cracks, but due to unavoidable noise in images, the segmentation of the cracks from its background, isn’t that precise. In this paper, we have tried to design a simple deep learning algorithm, which holds the potential to detect cracks of any thickness. As a result, it bypasses the need of manual feature extraction, by learning the essential features necessary for segmenting the crack from its background by classifying each pixel as a crack or not.    
+
 ### Dataset And Preprocessing:
 We evaluated our method on different dataset. They are as follows:
 * 	Crack500 [16] – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.•	Crack500 [16] – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.

@@ -35,8 +35,8 @@ The learning rate we have used here is not constant throughout the training of t
 
 ### Result:
 We have tested our model architecture on two datasets namely
-#### *Crack500
-#### *DeepCrack
+##### *Crack500
+##### *DeepCrack
 And we have achieved the following results:
 
 

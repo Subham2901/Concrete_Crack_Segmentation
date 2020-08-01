@@ -47,5 +47,9 @@ The learning rate we have used here is not constant throughout the training of t
 __We have tested our model architecture on two datasets namely Crack500 & DeepCrack__
 ##### And we have achieved the following results:
 ##### ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/Result/Result.JPG)
-
+#### Prediction Images:
+__CRACK500__
+#### ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/crack500/finalimage.JPG)
+__DeepCrack__
+#### ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/deepcrack/final.JPG)
 

@@ -32,13 +32,13 @@ We evaluated our method on different dataset. They are as follows:
 * 	Crack500  – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.
 * 	DeepCrack  – The dataset consists of 537 manual annotated images. This dataset was also splitted the same way as above.
 #### Image Augmentation:
-We augmented our data on the fly using the albumentation library. We applied random flips and rotations with random changes in lighting by increasing/decreasing contrast, gamma & brightness. We also applied random distortions like elastic distortion, grid distortion and optical distortion
+We augmented our data on the fly using the [Albumentations library](https://albumentations.ai/). We applied random flips and rotations with random changes in lighting by increasing/decreasing contrast, gamma & brightness. We also applied random distortions like elastic distortion, grid distortion and optical distortion
 
 ### Network Architecture:
  The base network architecture used here is based on U-Net, which was originally designed for segmentation of microscopic cells with limited number of annotated data. This is highly correlated with the task of crack segmentation. Therefore, this architecture is ideally suited for this work. Further, we have replaced all the Conv2d blocks with residual blocks(inspired form ResNet) such that we can make our model much deeper as well as can resolve the issue of the vanishing gradients. We have used the residual blocks in both downsampling(encoder) as well as upsampling(decorder) blocks.
  #### The skip Block & the BLock :
  ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/MOdel/model%20image%20final2.png)
- #### The Complete Model Architeture :
+ #### The Complete Model Architecture :
  ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/MOdel/model%20image%20final1.png)
  
 

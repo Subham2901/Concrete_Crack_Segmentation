@@ -12,6 +12,7 @@ for evaluation of our model we have used Dice Loss as our objetive function and 
 * [Loss Function & Optimizer](#Loss-Function-And-Optimizer)
 * [Learning Rate](#Learning-Rate)
 * [Result](#Result)
+* [Citations](#Citations)
 
 
 ### Introduction:
@@ -52,4 +53,37 @@ __CRACK500__
 #### ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/crack500/finalimage.JPG)
 __DeepCrack__
 #### ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/deepcrack/final.JPG)
+### Citations:
+# Please cite the following papers while using the follwing datasets:
+* __CRACK500__
+>@inproceedings{zhang2016road,
+  title={Road crack detection using deep convolutional neural network},
+  author={Zhang, Lei and Yang, Fan and Zhang, Yimin Daniel and Zhu, Ying Julie},
+  booktitle={Image Processing (ICIP), 2016 IEEE International Conference on},
+  pages={3708--3712},
+  year={2016},
+  organization={IEEE}
+}' 
+
+>@article{yang2019feature,
+  title={Feature Pyramid and Hierarchical Boosting Network for Pavement Crack Detection},
+  author={Yang, Fan and Zhang, Lei and Yu, Sijia and Prokhorov, Danil and Mei, Xue and Ling, Haibin},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  year={2019},
+  publisher={IEEE}
+}
+
+* DEEPCRACK
+```
+@article{liu2019deepcrack,
+  title={DeepCrack: A Deep Hierarchical Feature Learning Architecture for Crack Segmentation},
+  author={Liu, Yahui and Yao, Jian and Lu, Xiaohu and Xie, Renping and Li, Li},
+  journal={Neurocomputing},
+  volume={338},
+  pages={139--153},
+  year={2019},
+  doi={10.1016/j.neucom.2019.01.036}
+}
+```
+
 

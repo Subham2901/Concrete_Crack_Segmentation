@@ -29,8 +29,8 @@ A crack is a linear fracture in concrete which extends partly or completely thro
 
 ### Dataset And Preprocessing:
 We evaluated our method on different dataset. They are as follows:
-* 	Crack500 [16] – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.•	Crack500 [16] – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.
-* 	DeepCrack [17] – The dataset consists of 537 manual annotated images. This dataset was also splitted the same way as above.
+* 	Crack500  – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.
+* 	DeepCrack  – The dataset consists of 537 manual annotated images. This dataset was also splitted the same way as above.
 #### Image Augmentation:
 We augmented our data on the fly using the albumentation library. We applied random flips and rotations with random changes in lighting by increasing/decreasing contrast, gamma & brightness. We also applied random distortions like elastic distortion, grid distortion and optical distortion
 

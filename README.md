@@ -17,6 +17,9 @@ for evaluation of our model we have used Dice Loss as our objetive function and 
 ### Introduction:
 A crack is a linear fracture in concrete which extends partly or completely through the member. A crack occurs, when the tensile stresses of a concrete exceeds the tensile capacity due to various natural and man-made reasons. The utility of concrete can be seen in almost everywhere, from buildings, bridges, to other structures. Thus, when a crack occurs in a concrete slab, it can be an indication of some major structural problems in the whole architecture, which possess a potential risk of some serious accident. There lie some existing ways to detect cracks, starting from visual inspection and monitoring to other non-destructive techniques (NDT) which uses various image processing techniques to segment cracks, but due to unavoidable noise in images, the segmentation of the cracks from its background, isn’t that precise. In this paper, we have tried to design a simple deep learning algorithm, which holds the potential to detect cracks of any thickness. As a result, it bypasses the need of manual feature extraction, by learning the essential features necessary for segmenting the crack from its background by classifying each pixel as a crack or not.    
 
+## Image Showing Crack On Concrete
+<img src='/Images/intro/intro1.jfif'>
+
 ### Dataset And Preprocessing:
 We evaluated our method on different dataset. They are as follows:
 * 	Crack500 [16] – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.•	Crack500 [16] – The dataset consists of 500 images and corresponding masks of size (3264x2448). We used 80% data for training and 20% for validation.
@@ -26,6 +29,11 @@ We augmented our data on the fly using the albumentation library. We applied ran
 
 ### Network Architecture:
  The base network architecture used here is based on U-Net, which was originally designed for segmentation of microscopic cells with limited number of annotated data. This is highly correlated with the task of crack segmentation. Therefore, this architecture is ideally suited for this work. Further, we have replaced all the Conv2d blocks with residual blocks(inspired form ResNet) such that we can make our model much deeper as well as can resolve the issue of the vanishing gradients. We have used the residual blocks in both downsampling(encoder) as well as upsampling(decorder) blocks.
+ #### The skip Block & the BLock :
+ ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/MOdel/model%20image%20final2.png)
+ #### The Complete Model Architeture :
+ ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/MOdel/model%20image%20final1.png)
+ 
 
 ### Loss Function And Optimizer:
 ##### * Loss Function:
@@ -36,9 +44,8 @@ The optimizer that we have used here to optimize our model is ADAM and Beyond. W
 The learning rate we have used here is not constant throughout the training of the data, instead we have used a learning rate schedular, which increases/decreases the learning rate gradually after every fixed set of epochs such that  we can attain the optimum convergence by the end of our training of the data.
 
 ### Result:
-We have tested our model architecture on two datasets namely
-##### *Crack500
-##### *DeepCrack
-And we have achieved the following results:
+__We have tested our model architecture on two datasets namely Crack500 & DeepCrack__
+##### And we have achieved the following results:
+##### ![](https://github.com/Subham2901/Concrete_Crack_Segmentation/blob/master/Images/Result/Result.JPG)
 
 

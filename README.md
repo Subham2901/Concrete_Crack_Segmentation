@@ -1,5 +1,10 @@
 # Concrete Crack Segmentation
-A novel semantic segmentation architecture for crack detection.Semantic segmentation is the process of classifying each pixel of an image into distinct classes using deep learning.
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+
+A __novel semantic segmentation architecture for crack detection.__Semantic segmentation is the process of classifying each pixel of an image into distinct classes using deep learning.
 Classical image processing methods demands heavy feature engineering,as well as they are not that precise,when it comes to manual exraction of relavant features in real life scenarios.
 Hence,We tried to make a  modified U-net based architecture , and replaced all the convolutional layers with residual blocks(inspired from ResNet architecture) in both encoder and decoder region
 for evaluation of our model we have used Dice Loss as our objetive function and F1 score as a metric.Other than that,for better convergence and optimisation, a learning rate schedular and AMSGRAD optimiser was utilised
